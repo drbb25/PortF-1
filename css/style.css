@@ -47,3 +47,55 @@ a {
 .main_icons li {
   padding: 8px 15px;
 }
+
+.nav_search,
+.nav_menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .head_container {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .main_menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .main_icons {
+    display: none;
+    width: 100%;
+    justify-content: center;
+  }
+  .main_icons li {
+    padding: 10px;
+  }
+
+  .nav_search {
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    right: 80px;
+    padding: 10px;
+  }
+
+  .nav_menu {
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    right: 32px;
+    padding: 10px;
+  }
+
+  .main_menu.active,
+  .main_icons.active {
+    display: flex;
+  }
+}
